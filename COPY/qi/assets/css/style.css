@@ -1,0 +1,1100 @@
+/*--------------
+All Contents
+--------------*/
+
+/*-----------------
+1. Reset.css
+2. Helper Classes
+3. Main and Hero Section Stylings
+4. Services Styling
+5. Features Split
+6. Feature with BG
+7. Feature Big
+8. Testimonial Styling
+9. Pricing Section
+10. Call To Action Subscribe
+11. Contact Section
+12. Footer
+13. Back to top
+------------------*/
+
+
+/*----- 1. Reset.css -----*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --- Common Styles ---*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat' !important;
+  font-size: 16px;
+	color: #373C46;
+}
+
+p {
+	font-family: 'Open Sans' !important;
+	font-size: 14px;
+}
+
+/*----- Helper Classes -----*/
+
+html * {
+	text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+::-webkit-scrollbar {
+	display: none;
+}
+*/
+
+::-moz-selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+::selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.custom-padding {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.no-margin {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.no-color {
+	background: #FFFFFF !important;
+}
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   opacity: 1;
+   background-color: #F2F2F2;
+   z-index: 9999;
+   text-align: center;
+}
+
+#loading-image {
+	display: inline;
+    top: 40%;
+    position: relative;
+  z-index: 9999;
+}
+
+
+.logo {
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	z-index: 11;
+}
+
+/* ------ Navbar Styling Starts ----- */
+
+
+.navbar {
+	font-size: 14px;
+  font-family: 'Montserrat';
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-top: 25px;
+	letter-spacing: 1px;
+	height: 80px;
+}
+
+.navbar-default {
+  transition: all 0.6s ease;
+	border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-radius: 0px;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #666666;
+}
+
+.navbar-default .navbar-brand .navbar-toggle .collapsed {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #111111;
+  }
+
+.navbar-default .navbar-brand {
+	font-family: 'Montserrat';
+	font-size: 24px;
+	color: #444444;
+	letter-spacing: 0;
+	text-transform: capitalize;
+	padding: 12px 0 0 0;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.navbar-default .navbar-brand {
+	padding: 5px 0 0 0;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #111111;
+  transition: 1s;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: 400;
+  color: #222222;
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5;
+  transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #999999;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background: transparent;
+  color: #111111;
+  }
+
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: #EFEFEF;
+}
+
+.navbar-default .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: #111111;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-toggle {
+  color: #111111;
+}
+
+.navbar-default .nav-white > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-default .nav-white > li > a:hover {
+	color: #EFEFEF;
+}
+
+.navbar-default .nav-white {
+	color: #FFFFFF;
+}
+
+
+/*---------- Media Queries ---------*/
+
+@media only screen and (max-width: 767px) {
+
+	.navbar {
+		padding-top: 5px;
+		height: 60px;
+	}
+
+  .navbar-default {
+    border: 0px;
+    background-color: transparent;
+  }
+
+	.navbar-default .navbar-collapse {
+		text-align: center;
+		border-color: transparent;
+	  background-color: #FFFFFF;
+	}
+
+  .navbar-default .navbar-collapse {
+    border: 0;
+    border-color: transparent;
+  }
+
+
+  .navbar-default .navbar-nav > li> a {
+    color: #111111;
+		margin-top: 10px;
+  }
+
+	.navbar-default .navbar-nav > li> a:hover {
+		color: #222222;
+
+	}
+
+  .navbar-default .navbar-brand {
+    color: #222222;
+		padding: 7px 10px !important;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #666666;
+  }
+}
+
+@media only screen and (min-width: 240px) {
+
+.navbar.past-main {
+  transition: all 0.6s ease;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+.navbar.effect-main:active {
+  -webkit-transition: height 0.6s; /* For Safari 3.1 to 6.0 */
+  transition: height 0.6s;
+  height: 60px;
+}
+
+.navbar.past-main {
+	font-size: 14px;
+	padding-top: 5px;
+	height: 60px;
+	-webkit-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	-moz-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	-webkit-transition: 0.5s all ease; /* For Safari 3.1 to 6.0 */
+	transition: 0.5s all ease;
+}
+
+.navbar-default.past-main .navbar-brand {
+	font-size: 21px;
+	color: #444444;
+	padding: 7px 0;
+}
+
+.navbar-default.past-main .navbar-toggle .icon-bar {
+	background-color: #111111;
+}
+
+.navbar-default.past-main .navbar-nav > li > a {
+  color: #606060;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.navbar-default.past-main .navbar-nav > li > a:hover {
+  color: #111111;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a {
+  background: transparent;
+  color: #5924EC;
+  }
+
+
+.navbar-default.past-main .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: #222222;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: #222222;
+}
+
+.nav-alt.past-main .navbar-nav .btn-edge {
+	color: #FFFFFF;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.nav-alt.past-main .navbar-nav .btn-edge:hover {
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav .btn-action {
+	padding: 8px 20px;
+	margin: 0;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+.navbar-default.past-main .navbar-nav .btn-action {
+	margin: 6px 0 0 0;
+}
+
+
+/* ------------- Navbar Alt Styling --------------*/
+
+
+.nav-alt .navbar-nav > li > a {
+	font-family: 'Josefin Sans';
+	font-size: 16px;
+	color: #444444;
+	text-transform: capitalize;
+}
+
+.nav-alt .navbar-nav > li > a:hover {
+	color: #111111;
+}
+
+.nav-alt .navbar-nav .btn-edge {
+	margin: 8px 0 0 0;
+	padding: 6px 18px;
+	border-radius: 3px;
+	background: #624dd6;
+	border-color: #624dd6;
+	color: #FFFFFF;
+	font-size: 16px;
+	display: inline-block;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.nav-alt .navbar-nav .btn-edge:hover {
+	background: #624dd6;
+	color: #FFFFFF;
+}
+
+.nav-alt .navbar-nav .btn-edge:focus {
+	background: #624dd6;
+	color: #FFFFFF !important;
+}
+
+
+/*---------------------------------------------------------------------
+---------------- All Hero Sections Styling Starts Here ----------------
+---------------------------------------------------------------------*/
+
+.hero-1 {
+	padding: 150px 0 0 0;
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	background: #F2F2F2;
+}
+
+.hero-1 .intro {
+	padding: 0 0 75px 0;
+	text-align: center;
+}
+
+.hero-1 .intro h1 {
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #373C46;
+}
+
+.hero-1 .intro p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.4;
+	letter-spacing: 0;
+	color: #9da6b8;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.btn-action {
+	padding: 10px 24px;
+	background: #6c63ff;
+	border: 2px solid;
+	border-color: #6c63ff;
+	border-radius: 100px;
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	margin: 25px 10px 0 0;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.btn-action:hover {
+	color: #FFFFFF;
+	border-color: #6c63ff;
+	background: #6c63ff;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.btn-action:focus {
+	color: #FFFFFF;
+}
+
+.btn-nofill {
+	background: transparent;
+	border: 2px solid;
+	border-color: #0040ff;
+	color: #FFFFFF;
+	background: #0040ff;
+}
+
+.btn-nofill:hover {
+	color: #FFFFFF;
+	background: #0040ff;
+}
+
+
+.btn-fill {
+	background: transparent;
+	border: 2px solid;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.btn-fill:hover {
+	color: #FFFFFF;
+	background: transparent;
+}
+
+.btn-edge {
+	border-radius: 3px;
+	padding: 10px 20px;
+	background: #0060ff;
+	border-color: #0060ff;
+}
+
+.btn-edge:hover, .btn-edge:focus {
+	background: #0060ff;
+	border-color: #0060ff;
+	color: #FFFFFF;
+}
+
+.btn-white {
+	border-radius: 50px;
+	padding: 10px 20px;
+	background: transparent;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.btn-white:hover, .btn-white:focus {
+	background: #FFFFFF;
+	border-color: #FFFFFF;
+	color: rgba(0, 0, 0, 1);
+}
+
+
+.product .btn-edge {
+	border-radius: 3px;
+	padding: 10px 20px;
+	background: #624dd6;
+	border-color: #624dd6;
+}
+
+.product .btn-edge:hover, .btn-edge:focus {
+	background: #624dd6;
+	border-color: #624dd6;
+	color: #FFFFFF;
+}
+
+
+/* -----------------------------------------------------------
+------------ Hero 2 Product Landing Styling Starts -----------
+-------------------------------------------------------------*/
+
+
+.hero-2 {
+	padding: 200px 0 50px 0;
+	background: url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.hero-2 .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero-2 .intro h1 {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0;
+	color: #FFFFFF;
+}
+
+.hero-2 .intro h1 span {
+	font-size: 48px;
+	font-weight: 600;
+	color: #222222;
+}
+
+.hero-2 .intro p {
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	line-height: 1.4;
+	color: #848484;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 25px;
+
+}
+
+
+
+/* -----------------------------------------------------------
+------------ Hero 3 Service Landing Styling Starts -----------
+-------------------------------------------------------------*/
+
+.hero-3 {
+	padding: 150px 0 0 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../images/bg1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.hero-3 .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero-3 .intro h1 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #FFFFFF;
+}
+
+.hero-3 .intro p {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #FFF;
+	margin: 25px 0 0 0;
+}
+
+.hero-3 .btn-action {
+	background: #2575fc;
+	border-color: #2575fc;
+}
+
+/* -----------------------------------------------------------
+------------ Hero 4 Styling Starts -------------
+-------------------------------------------------------------*/
+
+
+.hero-4 {
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	background-size: cover;
+	padding: 150px 0 100px 0;
+}
+
+.hero-4 .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero-4 .video-icon {
+	position: absolute;
+	top: 15%;
+	left:0;
+	right: 0;
+	outline: none;
+}
+
+.hero-4 .video-icon i {
+	display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+	padding-left: 7px;
+  text-decoration: none;
+  text-align: center;
+  color: #6A11CB;
+	background: #FFFFFF;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.55em;
+  -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius: 50%;
+	box-shadow:0 5px 10px rgba(0, 0, 0, .15);
+}
+
+.hero-4 .intro h1 {
+	font-family: 'Montserrat';
+	font-size: 34px;
+	color: #FFFFFF;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.hero-4 .intro h4 {
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	margin-top: 75px;
+	margin-bottom: 10px;
+}
+
+
+/* ------------ Signup Hero Section ------------ */
+
+.signup {
+	background: #152a51;
+	background-size: cover;
+	padding: 100px 0 100px 0;
+}
+
+
+.signup .intro h1 {
+	font-family: 'Montserrat';
+	font-size: 28px;
+	font-weight: 600;
+	color: #FFF;
+	letter-spacing: 0;
+}
+
+.signup .intro p {
+	font-size: 16px;
+	color: #FFF;
+	line-height: 1.5;
+}
+
+.signup-form {
+	padding: 25px 25px 30px 25px;
+	background: #FFFFFF;
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+
+.signup-form h1 {
+	font-weight: 600;
+	font-size: 24px;
+	color: #343434;
+	letter-spacing: 0;
+	line-height: 1.4;
+	text-transform: capitalize;
+	text-align: center;
+	margin: 20px 0 40px 0;
+}
+
+.signup-form form textarea {
+	height: 100px;
+}
+
+.signup-form form .input-error {
+	border-color: #19b9e7;
+}
+
+.signup-form p {
+	font-family: 'Montserrat';
+	font-size: 12px;
+	color: #848484;
+	margin: 25px 0 10px 0;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+/*
+.signup .btn-action.btn-round {
+	background: #3333CC;
+	border-color: #3333CC;
+	color: #FFFFFF;
+	font-size: 15px;
+	padding: 12px 24px;
+	font-weight: 600;
+	text-transform: capitalize;
+	border: 2px solid #3333CC;
+	border-radius: 30px;
+}
+
+.signup .btn-action.btn-round:hover, .signup .btn-action.btn-round:focus {
+	background: transparent;
+	color: #3333CC;
+	border-color: #3333CC;
+}
+
+.signup .btn-action {
+	background: #3333CC;
+	border-color: #3333CC;
+	color: #FFFFFF;
+}
+
+.signup .btn-action:hover {
+	background: transparent;
+	border-color: #3333CC;
+	color: #3333CC;
+}
+*/
+
+.signup input[type="text"],
+textarea,
+textarea.form-control {
+	height: 45px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #888888;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+.signup textarea,
+textarea.form-control {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+.signup input[type="text"]:focus,
+textarea:focus,
+textarea.form-control:focus {
+	outline: 0;
+	background: #FFFFFF;
+    border: 1px solid #111;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; }
+input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; }
+input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
+
+
+
+.signup-form button.btn {
+	height: 45px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #111111;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #FFFFFF;
+		text-transform: uppercase;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+.signup-form button.btn:hover {
+	 opacity: 0.6; color: #FFFFFF;
+ }
+
+.signup-form button.btn:active {
+	 outline: 0;
+	 opacity: 0.6;
+	 color: #FFFFFF;
+	 -moz-box-shadow: none;
+	 -webkit-box-shadow: none;
+	 box-shadow: none;
+ }
+
+.signup-form button.btn:focus {
+	outline: 0;
+	opacity: 0.6;
+	background: #19b9e7;
+	color: #fff;
+}
+
+.signup-form button.btn:active:focus, button.btn.active:focus {
+	outline: 0;
+	opacity: 0.6;
+	background: #19b9e7;
+	color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+	.signup-form {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+
+/* -----------------------------------------------------------
+------------ Hero 6 Service Landing Styling Starts -----------
+-------------------------------------------------------------*/
+
+.hero-6 {
+	background: #000d1a;
+	background-size: cover;
+	padding: 150px 0 0 0;
+	text-align: center;
+}
+
+.hero-6 .intro {
+	text-align: center;
+	max-width: 480px;
+	padding: 75px 0 25px 0;
+}
+
+.hero-6 .intro h1 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0;
+	color: #FFFFFF;
+}
+
+.hero-6 .intro h1 span {
+	font-size: 48px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+.hero-6 .intro p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #A1A1A1;
+	margin-top: 25px;
+}
+
+.hero-6 .btn-action {
+	background: #0040ff;
+	border-color: #0040ff;
+	color: #FFFFFF;
+}
+
+
+/*------ Feature Big Section Styling Starts ------ */
+
+
+.feature_huge {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #FFFFFF;
+}
+
+.feature_huge img {
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.feature_huge .f-intro {
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+
+.feature_huge .f-intro h1 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.feature_huge .f-intro p {
+	font-size: 14px;
+	line-height: 1.4;
+	margin-top: 20px;
+}
+
+
+.feature_huge .feature_list {
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.feature_huge .feature_list img {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.feature_huge .feature_list h1 {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 0.5em;
+  color: #373C46;
+}
+
+.feature_huge .feature_list p {
+  font-size: 14px;
+  padding: 0.5em;
+	color: #606060;
+	letter-spacing: 0;
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+/*------ Feature Big Section Styling Ends ------ */
+
+
+/* ----- Counter Section Styling Starts -----*/
+
+.counter-section {
+ width: 100%;
+ padding-top: 100px;
+ padding-bottom: 100px;
+ background: #F3F3F3;
+}
+
+.counter-up {
+	background: #F2F2F2;
+	border-radius: 20px;
+	box-shadow:0 10px 10px rgba(108, 99, 255, .20);
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.counter-up:hover {
+	background: #F2F2F2;
+	box-shadow:0 15px 15px rgba(108, 99, 255, .30);
+}
+
+
+.counter-section h3  {
+	font-size: 28px;
+	font-weight: 400;
+	color: #303030;
+}
+
+.counter-icon {
+  padding: 15px;
+}
+
+.counter-icon img {
+  width: 60px;
+	height: 60px;
+}
+
+.counter-text {
+	margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.counter-text h4 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0.5em;
+  color: #9da6b8;
+}
+
+/* -------- Counter Section Styling Ends --------- */
+
+
+
+
+/*-----------------------------------------------------------
+------------ Pi Point Features Styling Starts ---------------
+-----------------------------------------------------------*/
+
+.f-points {
+	background: #FFFFFF;
+	padding: 100px 0 100px 0;
+}
+
+.points-intro {
+	padding: 0 0 50px 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.points-intro h1 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.poin
